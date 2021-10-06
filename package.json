@@ -2,8 +2,10 @@
   "name": "fastory-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,13 +14,15 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ts-node": "^10.2.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/node": "^16.10.3",
+    "nodemon": "^2.0.13",
     "typescript": "^4.4.3"
   }
 }
