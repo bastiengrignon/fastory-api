@@ -3,6 +3,10 @@ import axios from 'axios'
 export class SwapiService {
     static baseUrl = "https://swapi.dev/api"
 
+    public static async getObject(type: string, id: number): Promise<void> {
+        return await axios.get(`${ this.baseUrl }/${ type }/${ id }`).then(r => r.data)
+    }
+
     public static async searchPeople(string: string): Promise<any[]> {
         return await axios.get(`${ this.baseUrl }/people/?search=${ string }`).then(r => r.data['results'])
     }
