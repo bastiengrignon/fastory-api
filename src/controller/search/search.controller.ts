@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import {SwapiService} from '../../service/swapi'
+import { SwapiService } from '../../service/swapi'
 
 
 export class SearchController {
